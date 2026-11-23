@@ -3,7 +3,7 @@
 //! This example demonstrates how to use the ArchiveMatch API to filter
 //! entries based on patterns, timestamps, and other criteria.
 
-use libarchive2::{ArchiveMatch, ReadArchive};
+use xarxarxar::{ArchiveMatch, ReadArchive};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = std::env::args().collect();

@@ -8,7 +8,7 @@
 //! ## Reading an archive
 //!
 //! ```no_run
-//! use libarchive2::ReadArchive;
+//! use xarxarxar::ReadArchive;
 //!
 //! // Reading from a file (lifetime is 'static)
 //! let mut archive = ReadArchive::open("archive.tar.gz")?;
@@ -23,7 +23,7 @@
 //! ## Writing an archive
 //!
 //! ```no_run
-//! use libarchive2::{WriteArchive, ArchiveFormat, CompressionFormat};
+//! use xarxarxar::{WriteArchive, ArchiveFormat, CompressionFormat};
 //!
 //! let mut archive = WriteArchive::new()
 //!     .format(ArchiveFormat::Tar)

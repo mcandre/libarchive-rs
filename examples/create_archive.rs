@@ -1,6 +1,6 @@
 //! Example: Create a tar.gz archive
 
-use libarchive2::{ArchiveFormat, CompressionFormat, WriteArchive};
+use xarxarxar::{ArchiveFormat, CompressionFormat, WriteArchive};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Creating archive...");

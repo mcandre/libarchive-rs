@@ -1,4 +1,4 @@
-use libarchive2::{FileType, ReadArchive};
+use xarxarxar::{FileType, ReadArchive};
 use std::env;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {

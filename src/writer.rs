@@ -88,7 +88,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat};
     ///
     /// let mut archive = WriteArchive::new()
     ///     .format(ArchiveFormat::Zip)
@@ -109,7 +109,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat, FormatOption, CompressionLevel, ZipCompressionMethod};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat, FormatOption, CompressionLevel, ZipCompressionMethod};
     ///
     /// let mut archive = WriteArchive::new()
     ///     .format(ArchiveFormat::Zip)
@@ -131,7 +131,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat, CompressionFormat, FilterOption, CompressionLevel};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat, CompressionFormat, FilterOption, CompressionLevel};
     ///
     /// let mut archive = WriteArchive::new()
     ///     .format(ArchiveFormat::TarPax)
@@ -157,7 +157,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat};
     /// use std::time::SystemTime;
     ///
     /// let mut archive = WriteArchive::new()
@@ -182,7 +182,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat};
     ///
     /// let mut archive = WriteArchive::new()
     ///     .format(ArchiveFormat::TarPax)
@@ -239,7 +239,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat};
     ///
     /// let mut archive = WriteArchive::new()
     ///     .format(ArchiveFormat::Cpio)
@@ -292,7 +292,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat, CompressionFormat};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat, CompressionFormat};
     ///
     /// let mut buffer = vec![0u8; 1024 * 1024]; // 1MB buffer
     /// let mut used = 0;
@@ -343,7 +343,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat};
     /// use std::fs::File;
     /// use std::os::unix::io::AsRawFd;
     ///
@@ -404,7 +404,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, CallbackWriter, ArchiveFormat};
+    /// use xarxarxar::{WriteArchive, CallbackWriter, ArchiveFormat};
     /// use std::fs::File;
     ///
     /// let file = File::create("output.tar.gz")?;
@@ -1045,7 +1045,7 @@ impl<'a> WriteArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{WriteArchive, ArchiveFormat, EntryMut, FileType};
+    /// use xarxarxar::{WriteArchive, ArchiveFormat, EntryMut, FileType};
     ///
     /// let mut archive = WriteArchive::new()
     ///     .format(ArchiveFormat::TarPax)
@@ -1158,7 +1158,7 @@ impl<'a> WriteArchive<'a> {
 ///
 /// ```no_run
 /// use std::io::Write;
-/// use libarchive2::{WriteArchive, ArchiveFormat, EntryMut, FileType};
+/// use xarxarxar::{WriteArchive, ArchiveFormat, EntryMut, FileType};
 ///
 /// let mut archive = WriteArchive::new()
 ///     .format(ArchiveFormat::TarPax)
@@ -1184,7 +1184,7 @@ impl<'a> WriteArchive<'a> {
 /// any `std::io::Write` destination (e.g., a compressor, network socket, or buffer):
 ///
 /// ```no_run
-/// use libarchive2::{WriteArchive, CallbackWriter, ArchiveFormat};
+/// use xarxarxar::{WriteArchive, CallbackWriter, ArchiveFormat};
 ///
 /// let output_file = std::fs::File::create("archive.tar")?;
 /// // Could wrap output_file in flate2::write::GzEncoder here for extra compression

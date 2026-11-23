@@ -1,6 +1,6 @@
 use std::time::{Duration, SystemTime};
 
-use libarchive2::{
+use xarxarxar::{
     ArchiveFormat, CompressionFormat, EntryMut, FileType, ReadArchive, WriteArchive,
 };
 

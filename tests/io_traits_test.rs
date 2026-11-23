@@ -1,6 +1,6 @@
 use std::io::{Read, Write};
 
-use libarchive2::{
+use xarxarxar::{
     ArchiveFormat, CallbackWriter, CompressionFormat, EntryMut, FileType, ReadArchive, WriteArchive,
 };
 

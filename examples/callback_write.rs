@@ -3,7 +3,7 @@
 //! This example demonstrates how to use custom write callbacks to create
 //! archives to any destination that implements the Write trait.
 
-use libarchive2::{ArchiveFormat, CallbackWriter, CompressionFormat, WriteArchive};
+use xarxarxar::{ArchiveFormat, CallbackWriter, CompressionFormat, WriteArchive};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create a buffer to write to

@@ -9,7 +9,7 @@
 //! ## Reading a .pkg file
 //!
 //! ```no_run
-//! use libarchive2::PkgReader;
+//! use xarxarxar::PkgReader;
 //!
 //! let mut pkg = PkgReader::open("installer.pkg")?;
 //! while let Some(entry) = pkg.next_entry()? {
@@ -21,7 +21,7 @@
 //! ## Writing a .pkg file
 //!
 //! ```no_run
-//! use libarchive2::PkgWriter;
+//! use xarxarxar::PkgWriter;
 //!
 //! let mut pkg = PkgWriter::new();
 //! pkg.add_file("usr/local/bin/hello", b"#!/bin/sh\necho hello\n")?;
@@ -50,7 +50,7 @@ use std::time::SystemTime;
 /// # Examples
 ///
 /// ```no_run
-/// use libarchive2::PkgReader;
+/// use xarxarxar::PkgReader;
 ///
 /// let mut pkg = PkgReader::open("MyApp.pkg")?;
 /// while let Some(entry) = pkg.next_entry()? {
@@ -218,7 +218,7 @@ impl Drop for PkgReader {
 /// # Examples
 ///
 /// ```no_run
-/// use libarchive2::PkgWriter;
+/// use xarxarxar::PkgWriter;
 ///
 /// let mut pkg = PkgWriter::new();
 /// pkg.add_file("usr/local/bin/hello", b"#!/bin/sh\necho hello\n")?;

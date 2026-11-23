@@ -1,6 +1,6 @@
 //! Integration tests for sparse file block API
 
-use libarchive2::{ArchiveFormat, EntryMut, FileType, ReadArchive, WriteArchive};
+use xarxarxar::{ArchiveFormat, EntryMut, FileType, ReadArchive, WriteArchive};
 use tempfile::TempDir;
 
 #[test]

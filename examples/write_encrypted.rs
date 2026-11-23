@@ -3,7 +3,7 @@
 //! This example demonstrates how to create password-protected archives
 //! in various formats (ZIP, 7z).
 
-use libarchive2::{ArchiveFormat, WriteArchive};
+use xarxarxar::{ArchiveFormat, WriteArchive};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = std::env::args().collect();

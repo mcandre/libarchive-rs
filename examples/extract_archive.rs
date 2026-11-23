@@ -1,4 +1,4 @@
-use libarchive2::ReadArchive;
+use xarxarxar::ReadArchive;
 use std::env;
 use std::fs;
 use std::io::Write;
@@ -41,9 +41,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let size = entry.size();
 
         let type_str = match file_type {
-            libarchive2::FileType::RegularFile => "File",
-            libarchive2::FileType::Directory => "Dir ",
-            libarchive2::FileType::SymbolicLink => "Link",
+            xarxarxar::FileType::RegularFile => "File",
+            xarxarxar::FileType::Directory => "Dir ",
+            xarxarxar::FileType::SymbolicLink => "Link",
             _ => "Other",
         };
 
@@ -53,10 +53,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let full_path = Path::new(dest).join(&pathname);
 
         match file_type {
-            libarchive2::FileType::Directory => {
+            xarxarxar::FileType::Directory => {
                 fs::create_dir_all(&full_path)?;
             }
-            libarchive2::FileType::RegularFile => {
+            xarxarxar::FileType::RegularFile => {
                 // Create parent directories
                 if let Some(parent) = full_path.parent() {
                     fs::create_dir_all(parent)?;

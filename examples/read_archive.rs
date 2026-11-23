@@ -1,6 +1,6 @@
 //! Example: Read and extract an archive
 
-use libarchive2::ReadArchive;
+use xarxarxar::ReadArchive;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let path = std::env::args()

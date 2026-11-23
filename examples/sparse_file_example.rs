@@ -4,7 +4,7 @@
 //! Sparse files contain large gaps (holes) of zeros, and the block API allows
 //! efficient handling by only storing the non-zero data.
 
-use libarchive2::{ArchiveFormat, FileType, ReadArchive, WriteArchive};
+use xarxarxar::{ArchiveFormat, FileType, ReadArchive, WriteArchive};
 use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
@@ -29,7 +29,7 @@ fn create_sparse_archive() -> Result<(), Box<dyn Error>> {
         .open_file("sparse_example.tar")?;
 
     // Create a 10MB sparse file with data only at specific offsets
-    let mut entry = libarchive2::EntryMut::new();
+    let mut entry = xarxarxar::EntryMut::new();
     entry.set_pathname("sparse_file.bin")?;
     entry.set_file_type(FileType::RegularFile);
     entry.set_size(10 * 1024 * 1024); // 10MB total size

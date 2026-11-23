@@ -1,4 +1,4 @@
-use libarchive2::{ArchiveFormat, CompressionFormat, ReadArchive, WriteArchive};
+use xarxarxar::{ArchiveFormat, CompressionFormat, ReadArchive, WriteArchive};
 
 fn roundtrip_cpio_format(format: ArchiveFormat) {
     let dir = tempfile::tempdir().unwrap();

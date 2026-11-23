@@ -86,7 +86,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// // Read a multi-volume RAR archive split into parts
     /// let parts = vec!["archive.part1.rar", "archive.part2.rar", "archive.part3.rar"];
@@ -156,7 +156,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// // Read an encrypted multi-volume RAR archive
     /// let parts = vec!["secret.part1.rar", "secret.part2.rar", "secret.part3.rar"];
@@ -233,7 +233,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let data = std::fs::read("archive.tar.gz")?;
     /// let mut archive = ReadArchive::open_memory(&data)?;
@@ -271,7 +271,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     /// use std::fs::File;
     /// use std::os::unix::io::AsRawFd;
     ///
@@ -327,7 +327,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let mut archive = ReadArchive::open_with_passphrase(
     ///     "encrypted.zip",
@@ -365,7 +365,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{ReadArchive, CallbackReader};
+    /// use xarxarxar::{ReadArchive, CallbackReader};
     /// use std::fs::File;
     ///
     /// let file = File::open("archive.tar.gz")?;
@@ -570,7 +570,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let mut archive = ReadArchive::new().unwrap();
     /// archive.add_passphrase("my_password").unwrap();
@@ -595,7 +595,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let mut archive = ReadArchive::new().unwrap();
     /// archive.set_option("zip", "compat-2x", "1").unwrap();
@@ -706,7 +706,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let mut archive = ReadArchive::open("archive.tar")?;
     /// if let Some(entry) = archive.next_entry()? {
@@ -753,7 +753,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let mut archive = ReadArchive::open("sparse.tar")?;
     /// if let Some(entry) = archive.next_entry()? {
@@ -805,7 +805,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```compile_fail
-    /// use libarchive2::ReadArchive;
+    /// use xarxarxar::ReadArchive;
     ///
     /// let mut archive = ReadArchive::open("archive.tar.gz").unwrap();
     /// while let Some(entry) = archive.next_entry().unwrap() {
@@ -829,7 +829,7 @@ impl<'a> ReadArchive<'a> {
     /// # Examples
     ///
     /// ```compile_fail
-    /// use libarchive2::{ReadArchive, ExtractFlags};
+    /// use xarxarxar::{ReadArchive, ExtractFlags};
     ///
     /// let mut archive = ReadArchive::open("archive.tar.gz").unwrap();
     /// let flags = ExtractFlags::TIME | ExtractFlags::PERM | ExtractFlags::SECURE_SYMLINKS;
@@ -911,7 +911,7 @@ impl<'a> ReadArchive<'a> {
 ///
 /// ```no_run
 /// use std::io::Read;
-/// use libarchive2::ReadArchive;
+/// use xarxarxar::ReadArchive;
 ///
 /// let mut archive = ReadArchive::open("archive.tar.gz")?;
 /// while let Some(entry) = archive.next_entry()? {

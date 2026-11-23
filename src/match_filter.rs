@@ -47,7 +47,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     ///
     /// let mut matcher = ArchiveMatch::new()?;
     /// matcher.include_pattern("*.txt")?;  // Include all .txt files
@@ -72,7 +72,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     ///
     /// let mut matcher = ArchiveMatch::new()?;
     /// matcher.exclude_pattern("*.o")?;     // Exclude object files
@@ -99,7 +99,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     ///
     /// let mut matcher = ArchiveMatch::new()?;
     /// matcher.include_pathname("README.md")?;
@@ -131,7 +131,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     ///
     /// let mut matcher = ArchiveMatch::new()?;
     /// // Use exclude_pattern instead:
@@ -150,7 +150,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     /// use std::time::{SystemTime, UNIX_EPOCH};
     ///
     /// let mut matcher = ArchiveMatch::new()?;
@@ -180,7 +180,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     /// use std::time::{SystemTime, UNIX_EPOCH};
     ///
     /// let mut matcher = ArchiveMatch::new()?;
@@ -210,7 +210,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     ///
     /// let mut matcher = ArchiveMatch::new()?;
     /// matcher.include_uid(1000)?;  // Include only files owned by UID 1000
@@ -231,7 +231,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::ArchiveMatch;
+    /// use xarxarxar::ArchiveMatch;
     ///
     /// let mut matcher = ArchiveMatch::new()?;
     /// matcher.include_gid(1000)?;  // Include only files owned by GID 1000
@@ -274,7 +274,7 @@ impl ArchiveMatch {
     /// # Examples
     ///
     /// ```no_run
-    /// use libarchive2::{ReadArchive, ArchiveMatch};
+    /// use xarxarxar::{ReadArchive, ArchiveMatch};
     ///
     /// let mut archive = ReadArchive::open("archive.tar.gz")?;
     /// let mut matcher = ArchiveMatch::new()?;

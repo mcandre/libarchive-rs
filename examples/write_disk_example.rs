@@ -3,7 +3,7 @@
 //! This example demonstrates how to use the low-level WriteDisk API
 //! to write archive entries directly to disk with full control.
 
-use libarchive2::{EntryMut, ExtractFlags, FileType, WriteDisk};
+use xarxarxar::{EntryMut, ExtractFlags, FileType, WriteDisk};
 use std::time::SystemTime;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {

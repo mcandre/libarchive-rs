@@ -1,4 +1,4 @@
-use libarchive2::{PkgReader, PkgWriter};
+use xarxarxar::{PkgReader, PkgWriter};
 
 #[test]
 fn test_pkg_roundtrip() {
@@ -36,7 +36,7 @@ fn test_pkg_roundtrip() {
 
 #[test]
 fn test_pbzx_decompress_compress_roundtrip() {
-    use libarchive2::pbzx;
+    use xarxarxar::pbzx;
 
     let original = b"Test data for pbzx roundtrip";
     let compressed = pbzx::compress(original).unwrap();

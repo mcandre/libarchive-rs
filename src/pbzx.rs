@@ -17,7 +17,7 @@
 //! # Examples
 //!
 //! ```no_run
-//! use libarchive2::pbzx;
+//! use xarxarxar::pbzx;
 //!
 //! let payload_data = std::fs::read("Payload")?;
 //! let decompressed = pbzx::decompress(&payload_data)?;
@@ -54,7 +54,7 @@ const CHUNK_FLAG_XZ: u64 = 0x0100_0000;
 /// # Examples
 ///
 /// ```no_run
-/// use libarchive2::pbzx;
+/// use xarxarxar::pbzx;
 ///
 /// let payload = std::fs::read("Payload")?;
 /// let cpio_data = pbzx::decompress(&payload)?;
@@ -151,7 +151,7 @@ const DEFAULT_CHUNK_SIZE: usize = 1024 * 1024;
 /// # Examples
 ///
 /// ```
-/// use libarchive2::pbzx;
+/// use xarxarxar::pbzx;
 ///
 /// let original = b"Hello, world!";
 /// let compressed = pbzx::compress(original).unwrap();
@@ -172,7 +172,7 @@ pub fn compress(data: &[u8]) -> Result<Vec<u8>> {
 /// # Examples
 ///
 /// ```
-/// use libarchive2::pbzx;
+/// use xarxarxar::pbzx;
 ///
 /// let original = vec![0u8; 4096];
 /// let compressed = pbzx::compress_with_chunk_size(&original, 1024).unwrap();
@@ -221,7 +221,7 @@ pub fn compress_with_chunk_size(data: &[u8], chunk_size: usize) -> Result<Vec<u8
 /// # Examples
 ///
 /// ```
-/// use libarchive2::pbzx;
+/// use xarxarxar::pbzx;
 ///
 /// assert!(pbzx::is_pbzx(b"pbzx\x00\x00\x00\x00\x00\x01\x00\x00"));
 /// assert!(!pbzx::is_pbzx(b"not a pbzx stream"));

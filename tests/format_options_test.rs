@@ -1,6 +1,6 @@
 //! Integration tests for runtime format and filter options
 
-use libarchive2::{
+use xarxarxar::{
     ArchiveFormat, CompressionFormat, CompressionLevel, FilterOption, FormatOption, WriteArchive,
     ZipCompressionMethod,
 };
@@ -158,7 +158,7 @@ fn test_bzip2_compression_level() {
     assert!(archive_path.exists());
 
     // Verify by reading back
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     let entry = read_archive.next_entry().unwrap().unwrap();
     assert_eq!(entry.pathname().unwrap(), "test.txt");
@@ -186,7 +186,7 @@ fn test_xz_compression_level() {
     assert!(archive_path.exists());
 
     // Verify by reading back
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     let entry = read_archive.next_entry().unwrap().unwrap();
     assert_eq!(entry.pathname().unwrap(), "test.txt");
@@ -214,7 +214,7 @@ fn test_zstd_compression_level() {
     assert!(archive_path.exists());
 
     // Verify by reading back
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     let entry = read_archive.next_entry().unwrap().unwrap();
     assert_eq!(entry.pathname().unwrap(), "test.txt");
@@ -242,7 +242,7 @@ fn test_lz4_compression_level() {
     assert!(archive_path.exists());
 
     // Verify by reading back
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     let entry = read_archive.next_entry().unwrap().unwrap();
     assert_eq!(entry.pathname().unwrap(), "test.txt");
@@ -272,7 +272,7 @@ fn test_multiple_format_options() {
     assert!(archive_path.exists());
 
     // Verify by reading back - multiple options should work together
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     let entry = read_archive.next_entry().unwrap().unwrap();
     assert_eq!(entry.pathname().unwrap(), "test.txt");
@@ -301,7 +301,7 @@ fn test_7z_compression_level() {
     assert!(archive_path.exists());
 
     // Verify by reading back
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     let entry = read_archive.next_entry().unwrap().unwrap();
     assert_eq!(entry.pathname().unwrap(), "test.txt");
@@ -332,12 +332,12 @@ fn test_iso9660_options() {
 
     // Verify by reading back
     // Note: ISO9660 format has complex directory structure, so we iterate to find our file
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
 
     let mut found_file = false;
     while let Some(entry) = read_archive.next_entry().unwrap() {
-        if entry.file_type() == libarchive2::FileType::RegularFile {
+        if entry.file_type() == xarxarxar::FileType::RegularFile {
             let data = read_archive.read_data_to_vec().unwrap();
             if data == test_data {
                 found_file = true;
@@ -385,7 +385,7 @@ fn test_compression_no_data() {
     assert!(archive_path.exists());
 
     // Verify we can read the empty archive
-    use libarchive2::ReadArchive;
+    use xarxarxar::ReadArchive;
     let mut read_archive = ReadArchive::open(&archive_path).unwrap();
     // Should have no entries
     assert!(read_archive.next_entry().unwrap().is_none());

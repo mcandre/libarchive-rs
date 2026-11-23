@@ -3,7 +3,7 @@
 //! This example shows how to use strongly-typed format and filter options
 //! to control compression levels, format-specific settings, and metadata.
 
-use libarchive2::{
+use xarxarxar::{
     ArchiveFormat, CompressionFormat, CompressionLevel, FilterOption, FormatOption, WriteArchive,
     ZipCompressionMethod,
 };

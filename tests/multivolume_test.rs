@@ -1,6 +1,6 @@
 //! Integration tests for multi-volume archive support
 
-use libarchive2::{ArchiveFormat, ReadArchive, WriteArchive};
+use xarxarxar::{ArchiveFormat, ReadArchive, WriteArchive};
 use std::fs;
 use std::path::PathBuf;
 use tempfile::TempDir;

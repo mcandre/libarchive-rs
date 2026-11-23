@@ -3,7 +3,7 @@
 //! This example demonstrates how to use the ReadDisk API to read files
 //! from disk and create an archive.
 
-use libarchive2::{ArchiveFormat, CompressionFormat, ReadDisk, SymlinkMode, WriteArchive};
+use xarxarxar::{ArchiveFormat, CompressionFormat, ReadDisk, SymlinkMode, WriteArchive};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = std::env::args().collect();
@@ -47,7 +47,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         archive.write_header(&entry_mut)?;
 
         // If it's a regular file, copy the data
-        if entry.file_type() == libarchive2::FileType::RegularFile {
+        if entry.file_type() == xarxarxar::FileType::RegularFile {
             // For files with data, we would need to read from disk
             // ReadDisk doesn't provide read_data - you'd typically use std::fs
             // This is a simplified example
